@@ -1,0 +1,19 @@
+﻿{% extends "layout.html" %}
+{% block content %}
+<div class="home-content">
+   <h1>Smooth Conducting of Online Subjective Exams</h1>
+   <br>
+   
+   
+   {% for post in posts %}
+		<div class="post">
+		   <h1>{{ post.title }}</h1>
+		   <!--<p>By {{ post.author }} on {{post.date_posted}}</p>-->
+		   <p>Feature Idea added on {{post.date_posted}}</p>
+		   <p>{{ post.content }}</p>
+	   </div>
+	   <br>
+   {% endfor %}
+</div>  
+{% endblock content %}
+
